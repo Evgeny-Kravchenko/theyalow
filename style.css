@@ -1,1 +1,104 @@
+/*Подключение шрифтов*/
+@font-face {
+  font-family: "Lucida Sans";
+  src: url(./assets/fonts/LucidaSansItalic.ttf);
+}
 
+@font-face {
+  font-family: "Segoe WP";
+  src: url(./assets/fonts/SegoeWP.ttf);
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/*Начало стилей верхнего блока*/
+.topBlock {
+  padding-top: 28px;
+  background-image: url(./assets/images/bgHeader.jpg);
+  background-size: cover;
+}
+/*Центрирование контента*/
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+/*Стили header*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/*Стили логотипа*/
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 316px;
+}
+
+.logo h1 {
+  padding: 22px 6px 0 0;
+}
+
+.logo h1 a{
+  font: 2.5656rem "Lucida Sans";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+/*Стили панели навигации*/
+nav ul {
+  display: flex;
+  background-color: #f5c506;
+  margin-top: 43px;
+  box-shadow: -4px -5px rgba(245, 197, 6, 0.27), -8px -8px rgba(245, 197, 6, 0.27);
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  transition: 0.5s;
+  font: 1.0656rem "Segoe WP";
+  color: #9b7d08;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: #fdea9c;
+}
+
+.aboutUs {
+  padding: 9px 23px 10px 69px;
+  border-right: 1px solid #DCB105;
+}
+
+.aboutUs:before {
+  content: url(./assets/images/icon/person.png);
+  position: absolute;
+  top: 11px;
+  left: 39px;
+}
+
+.services {
+  padding: 9px 18px 10px 42px;
+  border-right: 1px solid #DCB105;
+}
+
+.services:before {
+  content: url(./assets/images/icon/services.png);
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
+.contact {
+  padding: 10px 22px 8px 49px;
+}
+
+.contact:before {
+  content: url(./assets/images/icon/contact.png);
+  position: absolute;
+  top: 11px;
+  left: 17px;
+}
