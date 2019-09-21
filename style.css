@@ -9,13 +9,18 @@
   src: url(./assets/fonts/SegoeWP.ttf);
 }
 
+@font-face {
+  font-family: "Asap Regular";
+  src: url(./assets/fonts/Asap-Regular.otf);
+}
+
 body {
-  max-width: 1300px;
+  width: 1300px;
   margin: 0 auto;
 }
 /*Начало стилей верхнего блока*/
 .topBlock {
-  padding-top: 28px;
+  padding: 28px 0 71px 0;
   background-image: url(./assets/images/bgHeader.jpg);
   background-size: cover;
 }
@@ -101,4 +106,129 @@ nav ul li a:hover {
   position: absolute;
   top: 11px;
   left: 17px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+}
+.video {
+  display: inline-block;
+  position: relative;
+  margin-left: 9px;
+}
+
+/*Стили для кнопок видео*/
+.bigButtonPlay {
+  position: absolute;
+  top: 130px;
+  left: 241px;
+  width: 67px;
+  height: 67px;
+  padding: 6px 0 0 5px;
+  background-color: rgba(245, 196, 6, 0.72);
+  border-radius: 33.5px;
+  border: none;
+}
+
+.smallButtonPlay {
+  position: absolute;
+  top: 278px;
+  left: 29px;
+  width: 27px;
+  height: 27px;
+  padding: 4px 0 0 4px;
+  background-color: rgba(245, 196, 6, 0.37);
+  border: none;
+}
+
+.smallButtonPlay svg {
+  opacity: 0.37;
+}
+
+.volume {
+  position: absolute;
+  top: 285px;
+  right: 19px;
+  background: rgba(255, 255, 255, 0);
+  padding: 0;
+  border: 0;
+}
+/*Стилизация прогрессбара*/
+progress {
+  position: absolute;
+  top: 286px;
+  left: 80px;
+  border: none;
+  height: 12px;
+  width: 404px;
+  border-radius: 6px;
+  background-color: rgba(245, 196, 6, 0.15);
+}
+
+progress::-webkit-progress-bar {
+  height: 12px;
+  width: 404px;
+  border-radius: 6px;
+  background-color: rgba(245, 196, 6, 0.15);
+}
+progress::-webkit-progress-value {
+  height: 12px;
+  width: 404px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgb(245, 196, 6);
+}
+progress::-moz-progress-bar {
+  height: 12px;
+  width: 404px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgb(245, 196, 6);
+}
+
+progress::-ms-fill {
+  height: 12px;
+  width: 404px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgb(245, 196, 6);
+  border-right: none;
+}
+
+.slider h2 {
+  font: 3.9406rem "Asap Regular";
+  color: #f5c506;
+  width: 398px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 70px 23px 0 0;
+}
+
+.slider h2 span {
+  color: #fff;
+}
+
+.leftArrow, .rightArrow {
+  position: absolute;
+  padding-top: 2px;
+  top: 132px;
+  width: 32px;
+  height: 57px;
+  border: none;
+}
+
+.leftArrow{
+  padding-left: 3px;
+  background-color: rgba(245, 196, 6, 0.71);
+  left: -140px;
+}
+
+.rightArrow {
+  padding-right: 3px;
+  background-color: rgb(245, 196, 6);
+  right: -140px;
 }
