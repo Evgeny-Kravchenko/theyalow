@@ -14,15 +14,22 @@
   src: url(./assets/fonts/Asap-Regular.otf);
 }
 
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url(./assets/fonts/segoe-wp-light.ttf);
+}
+
 body {
   width: 1300px;
   margin: 0 auto;
 }
 /*Начало стилей верхнего блока*/
 .topBlock {
-  padding: 28px 0 71px 0;
+  padding: 28px 0 68px 0;
   background-image: url(./assets/images/bgHeader.jpg);
   background-size: cover;
+  -webkit-box-shadow: inset 0px -13px 10px -13px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -13px 10px -13px rgba(0,0,0,0.75);
 }
 /*Центрирование контента*/
 .wrapper {
@@ -118,6 +125,12 @@ nav ul li a:hover {
   display: inline-block;
   position: relative;
   margin-left: 9px;
+}
+
+.video video {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 /*Стили для кнопок видео*/
@@ -219,16 +232,70 @@ progress::-ms-fill {
   width: 32px;
   height: 57px;
   border: none;
+  background-color: rgb(245, 196, 6);
+}
+
+.leftArrow:hover, .rightArrow:hover {
+  background-color: rgba(245, 196, 6, 0.71);
 }
 
 .leftArrow{
   padding-left: 3px;
-  background-color: rgba(245, 196, 6, 0.71);
   left: -140px;
 }
 
 .rightArrow {
   padding-right: 3px;
-  background-color: rgb(245, 196, 6);
   right: -140px;
+}
+/*Стилизация 3 одинаковых блоков*/
+.svgIcons {
+  background-image: url(./assets/images/lineBg.png);
+}
+
+.svgIcons .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.svgIcons .wrapper h3 {
+  font: 1.6906rem "Segoe UI Light";
+  text-transform: uppercase;
+}
+
+.betterDesign {
+  border-left: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.betterDesign svg {
+  margin: 61px 0 0 113px;
+}
+
+.betterDesign h3 {
+  margin: 6px 0 26px 89px;
+}
+
+.customise {
+  border-left: 1px solid rgba(0, 0, 0, 0.14);
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.customise svg {
+  margin: 37px 0 0 135px;
+}
+
+.customise h3 {
+  margin: 9px 0 26px 111px;
+}
+
+.itsFree {
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.itsFree svg {
+  margin: 54px 0 0 119px;
+}
+
+.itsFree h3 {
+  margin: 4px 0 26px 113px;
 }
