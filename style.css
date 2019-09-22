@@ -467,10 +467,13 @@ section {
   margin-left: 247px;
   cursor: pointer;
 }
-/*Стили для блока с девайсами*/
+/*Стили для блока с девайсами и списком*/
 .beforeFooter {
   background-image: url(./assets/images/bgDevices.jpg);
-  padding-top: 35px;
+  padding: 35px 0 75px 0;
+  -webkit-box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
 }
 
 .beforeFooter .wrapper h3 {
@@ -479,7 +482,7 @@ section {
   color: #f5c506;
   text-transform: uppercase;
 }
-
+/*Стили блока с девайсами*/
 .devices {
   position: relative;
   margin:45px 83px 0 18px;
@@ -512,7 +515,7 @@ section {
   padding: 48px 0 0 7px;
   box-sizing: border-box;
 }
-
+/*Стили списка*/
 .beforeFooter ul {
   width: 360px;
   font: 1.375rem "Open Sans";
@@ -528,4 +531,26 @@ section {
 
 .devicePlusUl {
   display: flex;
+}
+
+footer {
+  background-color: #4c4c4c;
+  padding: 6px 0 4px 0;
+}
+
+footer .logo {
+  width: 223px;
+}
+
+footer h2 {
+  padding-top: 10px;
+  padding-right: 6px;
+  text-shadow: 0px 2px 1px #000000;
+}
+
+footer h2 a{
+  font: 1.8156rem "Lucida Sans";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
 }
