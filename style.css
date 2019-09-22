@@ -10,13 +10,33 @@
 }
 
 @font-face {
+  font-family: "Segoe WP Light";
+  src: url(./assets/fonts/segoe-wp-light.ttf);
+}
+
+@font-face {
   font-family: "Asap Regular";
   src: url(./assets/fonts/Asap-Regular.otf);
 }
 
 @font-face {
   font-family: "Segoe UI Light";
-  src: url(./assets/fonts/segoe-wp-light.ttf);
+  src: url(./assets/fonts/SegoeUILight.ttf);
+}
+
+@font-face {
+  font-family: "PT Sans Regular";
+  src: url(./assets/fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url(./assets/fonts/Segoe\ UI.ttf);
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url(./assets/fonts/Segoe\ UI\ Bold.ttf);
 }
 
 body {
@@ -121,13 +141,13 @@ nav ul li a:hover {
   justify-content: space-between;
   margin-top: 54px;
 }
-.video {
+.topBlock .video {
   display: inline-block;
   position: relative;
   margin-left: 9px;
 }
 
-.video video {
+.topBlock .video video {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -210,7 +230,7 @@ progress::-ms-fill {
   background-color: rgb(245, 196, 6);
   border-right: none;
 }
-
+/*Текст слайдера*/
 .slider h2 {
   font: 3.9406rem "Asap Regular";
   color: #f5c506;
@@ -224,7 +244,7 @@ progress::-ms-fill {
 .slider h2 span {
   color: #fff;
 }
-
+/*Кнопки вперёд назад слайдера*/
 .leftArrow, .rightArrow {
   position: absolute;
   padding-top: 2px;
@@ -272,7 +292,7 @@ progress::-ms-fill {
 }
 
 .betterDesign h3 {
-  margin: 6px 0 26px 89px;
+  margin: 6px 0 32px 89px;
 }
 
 .customise {
@@ -285,7 +305,7 @@ progress::-ms-fill {
 }
 
 .customise h3 {
-  margin: 9px 0 26px 111px;
+  margin: 9px 0 32px 111px;
 }
 
 .itsFree {
@@ -297,5 +317,145 @@ progress::-ms-fill {
 }
 
 .itsFree h3 {
-  margin: 4px 0 26px 113px;
+  margin: 4px 0 32px 113px;
 }
+/*Стили блока с интерактивом*/
+.interactive {
+  background-image: url(./assets/images/bgInteractive.jpg);
+  -webkit-box-shadow: inset 0px -13px 10px -13px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 13px 10px -13px rgba(0,0,0,0.75);
+  padding-bottom: 21px;
+}
+
+.interactive h3 {
+  font: 2.3156rem "PT Sans Regular";
+  color: #fff;
+  text-transform: uppercase;
+  padding: 32px 0 0 3px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+  margin-bottom: 129px;
+}
+/*Стили блока с прикреплённым календарём*/
+.note {
+  position: relative;
+  width: 341px;
+  box-sizing: border-box;
+  background-color: #ec9e03;
+  padding: 16px 37px 0 31px;
+}
+
+.note p {
+  font: 1.8156rem "Segoe WP Light";
+  color: #fff;
+}
+
+.note button {
+  position: absolute;
+  bottom: 9px;
+  right: 15px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.note .date {
+  position: absolute;
+  left: 0;
+  bottom: -86px;
+  width: 113px;
+  box-sizing: border-box;
+  background-color: #ddb101;
+}
+
+.note .date p{
+  font: 1.3156rem "Segoe UI";
+  color: #b26529;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0 3px 0;
+}
+
+.note .date p span {
+  display: block;
+  font: bold 3.1906rem "Segoe UI Bold";
+  color: #fff;
+  line-height: 0.6;
+  padding-bottom: 10px;
+}
+/*Стили видео в .interactive*/
+.interactive .video {
+  width: 315px;
+  margin-left: -35px;
+  position: relative;
+  -webkit-box-shadow: 41px 94px 300px -65px rgba(255,255,255,1);
+  -moz-box-shadow: 41px 94px 300px -65px rgba(255,255,255,1);
+  box-shadow: 41px 94px 300px -65px rgba(255,255,255,1);
+}
+
+.interactive .video video{
+  display: block;
+  border-bottom: none;
+}
+
+.interactive .video .bigButtonPlay {
+  position: absolute;
+  top: 93px;
+  left: 130px;
+  width: 61px;
+  height: 61px;
+  padding: 6px 0 0 5px;
+  background-color: rgba(245, 196, 6, 0.72);
+  border-radius: 30.5px;
+  border: none;
+}
+/*Стили блока twitter*/
+.twitter {
+  position: relative;
+  width: 329px;
+  background-color: #ec9e03;
+}
+
+.twitter svg {
+  padding: 59px 0 0 83px;
+}
+
+.twitter span {
+  position: absolute;
+  right: 21px;
+  top: 11px;
+  font: 1.5656rem "Segoe WP Light";
+  color: #fff;
+}
+
+.twitter button {
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+/*Стили для swipeLine*/
+.swipeLine {
+  width: 896px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: rgba(255, 255, 255, 0.48);
+  margin-left: 73px;
+}
+
+.place {
+  width: 197px;
+  height: 15px;
+  background-color: #ec9e03;
+  border-radius: 7.5px;
+  margin-left: 247px;
+  cursor: pointer;
+}
+
+
