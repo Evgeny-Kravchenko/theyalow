@@ -39,6 +39,16 @@
   src: url(./assets/fonts/Segoe\ UI\ Bold.ttf);
 }
 
+@font-face {
+  font-family: "PT Sans Narrow Bold";
+  src: url(./assets/fonts/PTSansNarrow-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
 body {
   width: 1300px;
   margin: 0 auto;
@@ -457,5 +467,65 @@ section {
   margin-left: 247px;
   cursor: pointer;
 }
+/*Стили для блока с девайсами*/
+.beforeFooter {
+  background-image: url(./assets/images/bgDevices.jpg);
+  padding-top: 35px;
+}
 
+.beforeFooter .wrapper h3 {
+  margin-left: 214px;
+  font: 2.6906rem "PT Sans Regular";
+  color: #f5c506;
+  text-transform: uppercase;
+}
 
+.devices {
+  position: relative;
+  margin:45px 83px 0 18px;
+}
+
+.devices img {
+  vertical-align: top;
+  margin-right: 18px;
+}
+
+.tablet {
+  padding-top: 42px;
+}
+
+.mobile {
+  padding-top: 152px;
+}
+
+.sale {
+  position: absolute;
+  top: -43px;
+  left: -20px;
+  width: 116px;
+  height: 116px;
+  border-radius: 58px;
+  background-color: #f5c506;
+  font: 1.1712rem "PT Sans Narrow Bold";
+  color: #fff;
+  text-transform: uppercase;
+  padding: 48px 0 0 7px;
+  box-sizing: border-box;
+}
+
+.beforeFooter ul {
+  width: 360px;
+  font: 1.375rem "Open Sans";
+  color: #a9a9a7;
+  margin-top: 89px;
+}
+
+.beforeFooter ul li {
+  margin-bottom: 20px;
+  list-style-image: url(./assets/images/icon/ellipse.png);
+  padding-left: 13px;
+}
+
+.devicePlusUl {
+  display: flex;
+}
