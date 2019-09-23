@@ -306,12 +306,20 @@ progress::-ms-fill {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
 }
 
+.betterForMobile {
+  display: none;
+}
+
 .betterDesign svg {
   margin: 61px 0 0 113px;
 }
 
 .betterDesign h3 {
   margin: 6px 0 32px 89px;
+}
+
+.customiseForMobile {
+  display: none;
 }
 
 .customise {
@@ -325,6 +333,10 @@ progress::-ms-fill {
 
 .customise h3 {
   margin: 9px 0 32px 111px;
+}
+
+.itsFreeForMobile {
+  display: none;
 }
 
 .itsFree {
@@ -579,7 +591,7 @@ footer h2 a{
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: -7.8px;
+    bottom: -7.6px;
   }
 
   .topBlock .wrapper {
@@ -597,6 +609,7 @@ footer h2 a{
     box-sizing: border-box;
     padding: 11px 0 0 12px;
     background-image: url(./assets/images/bgLogoHeaderMobile.png);
+    background-size: cover;
   }
 
   .logoForMobile {
@@ -627,7 +640,7 @@ footer h2 a{
   }
 
   .aboutUs {
-    padding: 18px 23px 18px 58.3px;
+    padding: 18px 23px 18px 58.412px;
     border-right: 1px solid #DCB105;
   }
 
@@ -660,7 +673,7 @@ footer h2 a{
     top: 20px;
     left: 12px;
   }
-
+/*Адаптив слайдера*/
   .slider {
     margin: 0;
   }
@@ -704,11 +717,95 @@ footer h2 a{
     top: 286px;
     left: 134px;
   }
+/*Адаптив 3-х одинаковых блоков Better, Customise и itsFree*/
+  .svgIcons {
+    position: relative;
+    top: -4px;
+  }
 
-  main {
+  .svgIcons .wrapper {
+    width: 100%;
+    padding-bottom: 23px;
+    background-image: url(./assets/images/lineBg.png);
+    position: relative;
+    top: -5px;
+  }
+
+  .svgIcons .wrapper h3 {
+    font-size: 1.4406rem;
+  }
+
+  .betterForDesktop {
     display: none;
   }
 
+  .betterForMobile {
+    display: block;
+    padding: 42px 0 0 45px;
+  }
+
+  .betterDesign {
+    border-left: none;
+  }
+
+  .betterDesign svg {
+    margin: 0;
+  }
+
+  .betterDesign h3 {
+    margin: 17px 0 0 18px;
+  }
+
+  .customiseForMobile {
+    display: block;
+    padding: 38px 0 0 82px;
+  }
+
+  .customiseForDesktop {
+    display: none;
+  }
+
+  .customise {
+    border: none;
+  }
+
+  .customise svg {
+    margin: 0;
+  }
+
+  .customise h3 {
+    margin: 12px 0 0 57px;
+  }
+
+  .itsFreeForDesktop {
+    display: none;
+  }
+
+  .itsFreeForMobile {
+    display: block;
+    padding: 38px 0 0 70px;
+    }
+
+  .itsFree {
+    border-right: none;
+  }
+
+  .itsFree svg {
+    margin: 0;
+  }
+
+  .itsFree h3 {
+    margin: 13px 0 0 69px;
+  }
+
+  .interactive {
+    display: none;
+  }
+
+  .beforeFooter {
+    display: none;
+  }
+/*Адаптив footer*/
   footer {
     display: none;
   }
