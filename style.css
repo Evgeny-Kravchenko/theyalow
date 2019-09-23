@@ -155,6 +155,11 @@ nav ul li a:hover {
   justify-content: space-between;
   margin-top: 54px;
 }
+
+.videoForMobile {
+  display: none;
+}
+
 .topBlock .video {
   display: inline-block;
   position: relative;
@@ -563,7 +568,20 @@ footer h2 a{
   body {
     width: 640px;
   }
+
 /*Адаптив логотипа*/
+  header {
+    position: relative;
+  }
+
+  header:after {
+    content: url(./assets/images/shadowBottom.png);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: -7.8px;
+  }
+
   .topBlock .wrapper {
     width: 100%;
   }
@@ -571,6 +589,7 @@ footer h2 a{
   .topBlock {
     padding: 0;
     background-image: none;
+    box-shadow: none;
   }
 
   .topBlock .logo {
@@ -608,7 +627,7 @@ footer h2 a{
   }
 
   .aboutUs {
-    padding: 18px 23px 18px 58px;
+    padding: 18px 23px 18px 58.3px;
     border-right: 1px solid #DCB105;
   }
 
@@ -643,7 +662,47 @@ footer h2 a{
   }
 
   .slider {
+    margin: 0;
+  }
+
+  .slider .leftArrow, .slider .rightArrow, .slider h2 {
     display: none;
+  }
+
+  .videoForDesktop {
+    display: none;
+  }
+
+  .videoForMobile {
+    display: block;
+  }
+
+  .topBlock .video {
+    margin: 0;
+  }
+
+  .topBlock .video video{
+    box-shadow: none;
+  }
+
+  .bigButtonPlay {
+    top: 130px;
+    left: 295px;
+  }
+
+  .smallButtonPlay {
+    top: 278px;
+    left: 83px;
+  }
+
+  .volume {
+    top: 285px;
+    right: 56px;
+  }
+
+  progress {
+    top: 286px;
+    left: 134px;
   }
 
   main {
