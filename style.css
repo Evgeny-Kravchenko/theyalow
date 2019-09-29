@@ -84,7 +84,7 @@ header {
 }
 
 .logo h1 {
-  padding: 22px 6px 0 0;
+  padding: 23px 6px 0 0;
 }
 
 .logo h1 a{
@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 .aboutUs {
-  padding: 9px 23px 10px 69px;
+  padding: 9px 23px 10px 71px;
   border-right: 1px solid #DCB105;
 }
 
@@ -168,13 +168,7 @@ nav ul li a:hover {
 .topBlock .video {
   display: inline-block;
   position: relative;
-  margin-left: 9px;
-}
-
-.topBlock .video video {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  margin-left: 10px;
 }
 
 /*Стили для кнопок видео*/
@@ -262,21 +256,25 @@ progress::-ms-fill {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  padding: 70px 23px 0 0;
+  padding: 70.5px 23px 0 0;
 }
 
 .slider h2 span {
   color: #fff;
+  display: block;
+  margin-top: -3px;
+  margin-right: -16px;
 }
 /*Кнопки вперёд назад слайдера*/
 .leftArrow, .rightArrow {
   position: absolute;
-  padding-top: 2px;
+  padding-top: 3px;
   top: 132px;
   width: 32px;
   height: 57px;
   border: none;
   background-color: rgb(245, 196, 6);
+  transition: 0.5s;
 }
 
 .leftArrow:hover, .rightArrow:hover {
@@ -337,7 +335,7 @@ progress::-ms-fill {
 }
 
 .customise h3 {
-  margin: 9px 0 32px 111px;
+  margin: 10px 0 30px 111px;
 }
 
 .itsFreeForMobile {
@@ -353,7 +351,7 @@ progress::-ms-fill {
 }
 
 .itsFree h3 {
-  margin: 4px 0 32px 113px;
+  margin: 5px 0 31px 113px;
 }
 /*Стили блока с интерактивом*/
 .interactive {
@@ -367,14 +365,14 @@ progress::-ms-fill {
   font: 2.3156rem "PT Sans Regular";
   color: #fff;
   text-transform: uppercase;
-  padding: 32px 0 0 3px;
+  padding: 32px 0 0 1px;
 }
 
 section {
   display: flex;
   justify-content: space-between;
-  margin-top: 31px;
-  margin-bottom: 129px;
+  margin-top: 30px;
+  margin-bottom: 130px;
 }
 /*Стили блока с прикреплённым календарём*/
 .note {
@@ -382,7 +380,7 @@ section {
   width: 341px;
   box-sizing: border-box;
   background-color: #ec9e03;
-  padding: 16px 37px 0 31px;
+  padding: 16px 37px 0 29px;
 }
 
 .note p {
@@ -413,7 +411,8 @@ section {
   color: #b26529;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 0 3px 0;
+  padding: 17px 0 3px 0;
+  line-height: 1.25;
 }
 
 .note .date p span {
@@ -453,6 +452,7 @@ section {
 .twitter {
   position: relative;
   width: 329px;
+  margin-right: 2px;
   background-color: #ec9e03;
 }
 
@@ -462,7 +462,7 @@ section {
 
 .twitter span {
   position: absolute;
-  right: 21px;
+  right: 18px;
   top: 11px;
   font: 1.5656rem "Segoe WP Light";
   color: #fff;
@@ -500,14 +500,14 @@ section {
 /*Стили для блока с девайсами и списком*/
 .beforeFooter {
   background-image: url(./assets/images/bgDevices.jpg);
-  padding: 35px 0 75px 0;
+  padding: 36px 0 96px 0;
   -webkit-box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
   box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
 }
 
 .beforeFooter .wrapper h3 {
-  margin-left: 214px;
+  margin-left: 210px;
   font: 2.6906rem "PT Sans Regular";
   color: #f5c506;
   text-transform: uppercase;
@@ -515,16 +515,20 @@ section {
 /*Стили блока с девайсами*/
 .devices {
   position: relative;
-  margin:45px 83px 0 18px;
+  margin:45px 71px 0 18px;
 }
 
 .devices img {
   vertical-align: top;
-  margin-right: 18px;
+  margin-right: 20px;
 }
 
 .tablet {
   padding-top: 42px;
+}
+
+.devices .tablet {
+  margin-right: 21px;
 }
 
 .mobile {
@@ -550,13 +554,30 @@ section {
   width: 360px;
   font: 1.375rem "Open Sans";
   color: #a9a9a7;
-  margin-top: 89px;
+  margin-top: 88px;
+  padding-left: 10px;
 }
 
 .beforeFooter ul li {
-  margin-bottom: 20px;
   list-style-image: url(./assets/images/icon/ellipse.png);
-  padding-left: 13px;
+  padding-left: 12px;
+}
+
+.beforeFooter .ul li:first-child {
+  margin-bottom: 20px;
+}
+
+.beforeFooter .ul li:nth-child(2) {
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.beforeFooter .ul li:nth-child(3) {
+  margin-bottom: 23px;
+}
+
+.beforeFooter .ul li:last-child {
+  line-height: 1.25;
 }
 
 .devicePlusUl {
@@ -577,7 +598,7 @@ footer .logo {
 }
 
 footer h2 {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-right: 6px;
   text-shadow: 0px 2px 1px #000000;
 }
