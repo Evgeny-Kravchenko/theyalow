@@ -501,9 +501,9 @@ section {
 .beforeFooter {
   background-image: url(./assets/images/bgDevices.jpg);
   padding: 35px 0 75px 0;
-  -webkit-box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
-  box-shadow: inset 0px -61px 9px -57px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -60px 5px -57px rgba(0,0,0,0.75);
 }
 
 .beforeFooter .wrapper h3 {
@@ -810,9 +810,11 @@ footer h2 a{
   .interactive {
     background: none;
     box-shadow: none;
+    padding-bottom: 0;
   }
 
   .interactive section {
+    margin-bottom: 0;
     margin-top: 6px;
     justify-content: space-around;
   }
@@ -947,9 +949,34 @@ footer h2 a{
     display: none;
   }
 
-  .beforeFooter {
+  .ul {
     display: none;
   }
+
+  .beforeFooter {
+    padding: 30px 0 55px 19px;
+    background-color: #474747;
+    background-image: none;
+  }
+
+  .beforeFooter .wrapper{
+    width: 100%;;
+  }
+
+  .beforeFooter .wrapper h3 {
+    font: 2.4406rem "Open Sans";
+    margin: 0 0 28px 0;
+  }
+
+  .devices {
+    margin: 45px 0px 0 38px;
+  }
+
+  .sale {
+    position: absolute;
+    left: -30px;
+  }
+
 /*Адаптив footer*/
   footer {
     display: none;
