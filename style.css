@@ -568,6 +568,10 @@ footer {
   padding: 6px 0 4px 0;
 }
 
+.logo-footer-for-mobile {
+  display: none;
+}
+
 footer .logo {
   width: 223px;
 }
@@ -978,7 +982,28 @@ footer h2 a{
   }
 
 /*Адаптив footer*/
-  footer {
+  footer .wrapper{
+    width: 100%;
+  }
+
+  footer h2 {
+    padding-top: 7px;
+  }
+
+  footer h2 a{
+    font-size: 1.0425rem;
+  }
+
+  footer .logo {
+    width: 136px;
+    margin-left: 65px;
+  }
+
+  .logo-footer-for-mobile {
+    display: block;
+  }
+
+  .logo-footer-for-desktop {
     display: none;
   }
 }
