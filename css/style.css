@@ -1,6 +1,10 @@
 /*import fonts*/
 @import url("./fonts.css");
 
+html {
+  font-size: 10px;
+}
+
 .wrapper-out {
   width: 1300px;
   margin: 0 auto;
@@ -37,9 +41,9 @@
 
 .logo-theyalow {
   padding: 23px 6px 0 0;
-  font: 2.5656rem "Lucida Sans";
+  font: 4.105rem "Lucida Sans";
   font-style: italic;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .logo-svg,
@@ -61,19 +65,19 @@
   display: block;
   position: relative;
   transition: 0.5s;
-  font: 1.0656rem "Segoe WP";
-  color: #9B7D08;
+  font: 1.705rem "Segoe WP";
+  color: #9b7d08;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .nav a:hover {
-  background-color: #FDEA9C;
+  background-color: #fdea9c;
 }
 
 .about-us {
   padding: 9px 23px 10px 71px;
-  border-right: 1px solid #DCB105;
+  border-right: 1px solid #dcb105;
 }
 
 .about-us:before {
@@ -85,7 +89,7 @@
 
 .services {
   padding: 9px 18px 10px 42px;
-  border-right: 1px solid #DCB105;
+  border-right: 1px solid #dcb105;
 }
 
 .services:before {
@@ -186,7 +190,7 @@ progress::-webkit-progress-value {
   width: 404px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  background-color: #F5C406;
+  background-color: #f5c406;
 }
 
 progress::-moz-progress-bar {
@@ -194,7 +198,7 @@ progress::-moz-progress-bar {
   width: 404px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  background-color: #F5C406;
+  background-color: #f5c406;
 }
 
 progress::-ms-fill {
@@ -202,14 +206,14 @@ progress::-ms-fill {
   width: 404px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  background-color: #F5C406;
+  background-color: #f5c406;
   border-right: none;
 }
 
 /*Style of text of slider*/
 .slider h1 {
-  font: 3.9406rem "Asap";
-  color: #F5C506;
+  font: 6.305rem "Asap";
+  color: #f5c506;
   width: 398px;
   text-transform: uppercase;
   text-align: center;
@@ -218,7 +222,7 @@ progress::-ms-fill {
 }
 
 .slider h1 span {
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   margin-top: -3px;
   margin-right: -16px;
@@ -233,20 +237,22 @@ progress::-ms-fill {
   width: 32px;
   height: 57px;
   border: 0;
-  background-color: #F5C406;
+  background-color: #f5c406;
   transition: 0.5s;
 }
 
 .left-arrow {
   padding-left: 3px;
   left: -140px;
-  background: #F5C406 url("../assets/images/svg/arrowLeft.svg") no-repeat 50% 50%;
+  background: #f5c406 url("../assets/images/svg/arrowLeft.svg") no-repeat 50%
+    50%;
 }
 
 .right-arrow {
   padding-right: 3px;
   right: -140px;
-  background: #F5C406 url("../assets/images/svg/arrowRight.svg") no-repeat 50% 50%;
+  background: #f5c406 url("../assets/images/svg/arrowRight.svg") no-repeat 50%
+    50%;
 }
 
 .left-arrow:hover,
@@ -265,7 +271,7 @@ progress::-ms-fill {
 }
 
 .description .wrapper h3 {
-  font: 1.6906rem "Segoe UI";
+  font: 2.705rem "Segoe UI";
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -328,8 +334,8 @@ progress::-ms-fill {
 }
 
 .interactive h3 {
-  font: 2.3156rem "PT Sans";
-  color: #FFFFFF;
+  font: 3.705rem "PT Sans";
+  color: #ffffff;
   text-transform: uppercase;
   padding: 32px 0 0 1px;
 }
@@ -346,14 +352,14 @@ section {
   position: relative;
   width: 341px;
   box-sizing: border-box;
-  background-color: #EC9E03;
+  background-color: #ec9e03;
   padding: 16px 37px 0 29px;
 }
 
 .interactive__note p {
-  font: 1.8156rem "Segoe WP";
+  font: 2.905rem "Segoe WP";
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .button-add {
@@ -374,12 +380,12 @@ section {
   bottom: -86px;
   width: 113px;
   box-sizing: border-box;
-  background-color: #DDB101;
+  background-color: #ddb101;
 }
 
 .interactive__date p {
-  font: 1.3156rem "Segoe UI";
-  color: #B26529;
+  font: 2.105rem "Segoe UI";
+  color: #b26529;
   text-transform: uppercase;
   text-align: center;
   padding: 17px 0 3px 0;
@@ -388,9 +394,9 @@ section {
 
 .interactive__date p span {
   display: block;
-  font: 3.1906rem "Segoe UI";
+  font: 5.105rem "Segoe UI";
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 0.6;
   padding-bottom: 10px;
 }
@@ -400,7 +406,7 @@ section {
   width: 315px;
   margin-left: -35px;
   position: relative;
-  box-shadow: 41px 94px 300px -65px #FFFFFF;
+  box-shadow: 41px 94px 300px -65px #ffffff;
 }
 
 .interactive__video video {
@@ -425,10 +431,12 @@ section {
   position: relative;
   width: 329px;
   margin-right: 2px;
-  background-color: #EC9E03;
+  background-color: #ec9e03;
 }
 
 .twitter-img {
+  width: 163px;
+  height: 133px;
   padding: 59px 0 0 83px;
 }
 
@@ -436,9 +444,9 @@ section {
   position: absolute;
   right: 18px;
   top: 11px;
-  font: 1.5656rem "Segoe WP";
+  font: 2.505rem "Segoe WP";
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .twitter button {
@@ -466,7 +474,7 @@ section {
 .place {
   width: 197px;
   height: 15px;
-  background-color: #EC9E03;
+  background-color: #ec9e03;
   border-radius: 7px;
   margin-left: 247px;
   cursor: pointer;
@@ -481,8 +489,8 @@ section {
 
 .devices-wrap .wrapper h3 {
   margin-left: 210px;
-  font: 2.6906rem "PT Sans";
-  color: #F5C506;
+  font: 4.305rem "PT Sans";
+  color: #f5c506;
   text-transform: uppercase;
 }
 
@@ -513,10 +521,10 @@ section {
   width: 116px;
   height: 116px;
   border-radius: 58px;
-  background-color: #F5C506;
-  font: 1.1712rem "PT Sans Narrow";
+  background-color: #f5c506;
+  font: 1.874rem "PT Sans Narrow";
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 48px 0 0 7px;
   box-sizing: border-box;
@@ -525,8 +533,8 @@ section {
 /*Style list*/
 .devices__list {
   width: 360px;
-  font: 1.375rem "Open Sans";
-  color: #A9A9A7;
+  font: 2.2rem "Open Sans";
+  color: #a9a9a7;
   margin-top: 88px;
   padding-left: 10px;
 }
@@ -559,7 +567,7 @@ section {
 
 /*Style for footer*/
 footer {
-  background-color: #4C4C4C;
+  background-color: #4c4c4c;
   padding: 6px 0 4px 0;
 }
 
@@ -571,11 +579,11 @@ footer .logo-theyalow {
   padding-top: 11px;
   padding-right: 6px;
   text-shadow: 0 2px 1px #000000;
-  font: 1.8156rem "Lucida Sans";
+  font: 2.905rem "Lucida Sans";
   font-style: italic;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 footer .logo-svg,
@@ -625,7 +633,7 @@ footer .logo-svg-img {
   .logo-theyalow {
     padding: 11px 25px 0 0;
     text-shadow: 0 2px 1px #000000;
-    font-size: 1.2056rem;
+    font-size: 1.929rem;
   }
 
   .logo-svg,
@@ -642,12 +650,12 @@ footer .logo-svg-img {
   }
 
   .nav a {
-    font: 1.1906rem "Segoe WP";
+    font: 1.905rem "Segoe WP";
   }
 
   .about-us {
     padding: 18px 23px 18px 58px;
-    border-right: 1px solid #DCB105;
+    border-right: 1px solid #dcb105;
   }
 
   .about-us:before {
@@ -659,7 +667,7 @@ footer .logo-svg-img {
 
   .services {
     padding: 18px 15px 18px 38px;
-    border-right: 1px solid #DCB105;
+    border-right: 1px solid #dcb105;
   }
 
   .services:before {
@@ -742,7 +750,7 @@ footer .logo-svg-img {
   }
 
   .description .wrapper h3 {
-    font-size: 1.4406rem;
+    font-size: 2.305rem;
   }
 
   .description__one-svg,
@@ -832,7 +840,7 @@ footer .logo-svg-img {
   }
 
   .interactive__note p {
-    font-size: 1.8106rem;
+    font-size: 2.897rem;
     line-height: 1.1742;
   }
 
@@ -852,8 +860,13 @@ footer .logo-svg-img {
   .twitter {
     display: flex;
     width: 100%;
-    background-color: #F5C507;
+    background-color: #f5c507;
     padding-bottom: 11px;
+  }
+
+  .twitter-img {
+    width: 163px;
+    height: 133px;
   }
 
   .twitter span {
@@ -876,8 +889,8 @@ footer .logo-svg-img {
     position: relative;
     width: 216px;
     padding: 7px 40px 19px 21px;
-    font: 0.8156rem "Arial";
-    color: #8F8E8E;
+    font: 1.305rem "Arial";
+    color: #8f8e8e;
     background-repeat: no-repeat;
     z-index: 1;
   }
@@ -910,7 +923,7 @@ footer .logo-svg-img {
     height: 31px;
     margin-left: 6px;
     border-radius: 10px;
-    border: 1px solid #D0A806;
+    border: 1px solid #d0a806;
     box-shadow: inset 5px 5px 14px -5px rgba(0, 0, 0, 0.18);
   }
 
@@ -924,10 +937,10 @@ footer .logo-svg-img {
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
     border: 0;
-    font: 0.9406rem "Arial";
-    color: #FFFFFF;
-    background: #EAA927;
-    background: linear-gradient(to bottom, #EAA927 0%, #EAA927 100%);
+    font: 1.505rem "Arial";
+    color: #ffffff;
+    background: #eaa927;
+    background: linear-gradient(to bottom, #eaa927 0%, #eaa927 100%);
   }
 
   .interactive_date {
@@ -954,7 +967,7 @@ footer .logo-svg-img {
   }
 
   .devices-wrap .wrapper h3 {
-    font: 2.4406rem "Open Sans";
+    font: 3.905rem "Open Sans";
     margin: 0 0 28px 0;
   }
 
